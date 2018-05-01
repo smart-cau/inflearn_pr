@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        flex2. about properties in 'item' categoriy
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="css/stylesheet_pr.css">
+    <meta charset="utf-8">
+
+    <style type="text/css">
+
+        .container{
+            background-color: powderblue;
+            height: 200px;
+            display: flex; /*flex 사용의 출발점은 부모 태그에 display: flex;로 설정하는 것!*/
+            flex-direction: row;/*flex-direction의 기본 값은 row. row-reverse는 반대로 정렬
+            값을 column으로 바꾸면 수직정렬. 뒤집는 것은 column reverse.*/
+        }
+
+        .item{
+            background-color: tomato;
+            color: white;
+            border: 1px solid white;
+      /*      flex-grow: 0;/*기본 값은 0. 1부터는 부모태그가 차지하는 크기를 1/n(자식의 갯수)해서 나눠갖음.*/
+        }
+
+        .item:nth-child(1){
+            flex-basis: 300px;
+            flex-shrink: 1;
+        }
+
+        .item:nth-child(2){
+        /*    flex-basis: 200px; /*flex-basis : flex의 방향에 해당되는 것의 크기 지정.*/
+      /*      flex-grow: 2; /*flex-grow의 값은 상대적. 전체 item의 flex-grow 값에 맞춰 그것의 배수만큼 특정 iteml의 크기를 키움. 예시로 이해하는 것이 가장 빠름.*/
+            flex-basis: 300px;
+       /*     flex-shrink: 0;    /*item이 flex-basis값을 가지고 있고, flex-shrink값이 0이면, 0인 item은 화면이 줄어들 때, 고통분담을 하지 않음.*/
+            flex-shrink: 2;    /*1th item의 shrink 값이 1, 2nd child의 shrink 값이 2이면, 1th는 1/(1+2)만큼의, 2nd는 2(1+2)만큼의 고통분담을 한다.*/
+        }
+
+        </style>
+
+</head>
+<body>
+        <!-- flex 효과를 주기 위해 반드시 div 태그를 쓸 필요도, 클래스 명을 container와 item으로 줄 필요가 없음. 중요한 것은 부모와 자식 관계! -->
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+
+
+
+
+</body>
+</html>

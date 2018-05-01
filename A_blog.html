@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>blog.v1</title>
+    <meta charset="utf-8">
+    <meta name='viewport' content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/stylesheet_pr.css"> -->
+
+    <!-- ___________ -->
+    <style type="text/css">
+        /*---------초기화 코드--------*/
+        * {
+            margin :0;
+            padding: 0;
+
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color:  #000;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            border : 0;
+        }
+        /*-----------------*/
+
+        header{
+
+            box-sizing: border-box;
+            color: #fff;
+            position: sticky;
+            top: 0;
+        }
+
+        header h1{
+            display: inline-block;
+            padding: 10px;
+        }
+
+        section{
+            width: 100%;
+            height: 100vh;
+        }
+
+        .sec1{
+            /*background-color: red;*/
+            background-image: url(images/fam.jpg);
+            background-size: cover;
+        }
+
+        .sec2{
+            padding: 100px;
+            box-sizing: border-box;
+            height: auto;
+            color: #fff;
+        }
+
+        .sec2 h2{
+            font-size: 3em;
+            margin: 0;
+            padding: 0 0 20px;
+        }
+
+        .sec2 p{
+            font-size: 1.2em;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .sec3{
+            /*background-color: red;*/
+            background-image: url(images/girls.jpg);
+            background-size: cover;
+            width: 100%;
+        }
+
+        nav{
+            width: 100%;
+            height: 50px;
+            background: rgba(0,0,0,0.8);
+            border-top: 1px solid rgba(255,255,255,.2);
+            border-bottom: 1px solid rgba(255,255,255,.2);
+        }
+
+        nav ul{
+            display: flex;
+            margin: 0;
+            /*padding: 0 100px;*/
+            float: right;
+        }
+
+        nav ul li{
+            list-style: none;
+        }
+
+        nav ul li a{
+            display: block;
+            color: #fff;
+            padding: 0 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            line-height: 50px;
+        }
+
+        header nav ul li a:hover{
+            background-color: #f00;
+        }
+
+        .active{
+            background-color: #f00;
+        } /*대체 왜 이게 안먹히는지 모르겠다.....*/
+
+    </style>
+    <!-- ___________ -->
+</head>
+
+
+
+<body>
+
+    <header>
+        <nav>
+        <h1>심리밀당남</h1>
+        <ul>
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+
+
+    <section class="sec1"></section>
+
+    <section class="sec2">
+        <h2>Pure CSS Sticky nav bar without js</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil tenetur sint dignissimos, odit. Quos accusamus iure a dolorem vel mollitia excepturi harum magnam, quasi dignissimos, voluptatibus esse praesentium pariatur maiores minima voluptates debitis ipsam ad sit, minus nemo ipsum quaerat rerum aliquam! Facilis atque ipsa, quo nesciunt veritatis aperiam provident voluptas nisi accusamus amet, nostrum quam blanditiis sed illo, eos laboriosam commodi in ea nobis quibusdam. Repellendus dolore, impedit, hic eos, ratione eveniet odio expedita quisquam distinctio sed animi. Recusandae doloremque debitis iure repellendus odio voluptatem, ipsam quasi aliquid! Quos eligendi fugit doloribus aut ex molestiae rem nesciunt optio, aspernatur?</p>
+    </section>
+
+    <section class="sec3"></section>
+
+    <section class="sec2">
+        <h2>Pure CSS Sticky nav bar without js</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil tenetur sint dignissimos, odit. Quos accusamus iure a dolorem vel mollitia excepturi harum magnam, quasi dignissimos, voluptatibus esse praesentium pariatur maiores minima voluptates debitis ipsam ad sit, minus nemo ipsum quaerat rerum aliquam! Facilis atque ipsa, quo nesciunt veritatis aperiam provident voluptas nisi accusamus amet, nostrum quam blanditiis sed illo, eos laboriosam commodi in ea nobis quibusdam. Repellendus dolore, impedit, hic eos, ratione eveniet odio expedita quisquam distinctio sed animi. Recusandae doloremque debitis iure repellendus odio voluptatem, ipsam quasi aliquid! Quos eligendi fugit doloribus aut ex molestiae rem nesciunt optio, aspernatur?</p>
+    </section>
+
+
+
+
+
+</body>
+</html>

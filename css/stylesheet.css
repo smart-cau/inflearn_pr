@@ -1,0 +1,92 @@
+/*---------초기화 코드--------*/
+* {
+    margin :0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border : 0;
+}
+/*-----------------*/
+
+/*---------------Parralax Effect--------------------*/
+.scene{
+    /*background-repeat: no-repeat;*/
+    height: 100vh;   /*viewport는 사용자가 보고 있는화면의 영역. vh는 뷰포트 크기의 단위. % 같은 단위...*/
+    width: 100%;
+    overflow: hidden;
+
+    background-attachment: fixed; /*---!!!이 한 줄이 parallax 효과를 줌 !!! ------*/
+    background-size: cover; /*이 효과를 찾아 해맴.*/
+
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Black Han Sans', sans-serif;
+    font-weight: 100;
+}
+
+.one{
+    background-image: url(../images/fam.jpg);
+
+}
+
+.two{
+    background-image: url(../images/girls.jpg);
+    /*background-position: center;*/
+    /*background-repeat: none; 가운데 정렬을 위해선 이런 것들 보다는 그냥 backgorund-size를 cover로 지정하는게 내가 원하는 효과를 위해 필요 할 수 있음.*/
+}
+
+.three{
+    background-image: url(../images/pr_bubble.jpg);
+}
+
+/*--------------------------------------------*/
+
+
+/*------------Text Decoration-------------*/
+.scene header{
+    max-width: 80%;
+    color: white;
+    /*border: 5px solid yellow;*/
+    /*text-align: center;*/
+    /*수평정렬 공식 !*/
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    /*수평정렬 공식 -> left: 50%; transform : translateX(-50%);
+      수직정렬 공식 -> top 50%; transfrom : translateY(-50%);  */
+      font-size: 1rem;
+      text-align: center;
+
+
+}
+
+.scene header h1{
+    font-size: 2rem;
+
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.scene header h1:after{
+    content: '';
+    border-bottom: 1px solid white;
+    width: 8rem;
+    display: block;
+    margin: 0 auto;  /*가장 전통적인 가운데 정렬.*/
+    margin-top: 1rem;
+}
+
+

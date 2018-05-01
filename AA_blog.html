@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Let's do this shit
+    </title>
+
+    <meta charset="utf-8">
+    <meta name='viewport' content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+    <style type="text/css">
+            /*---------초기화 코드--------*/
+        * {
+            margin :0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color:  rgb(118, 174, 233);
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            border : 0;
+        }
+        /*-----------------*/
+
+        .container{
+
+        }
+
+        header{
+            width: 100%;
+            height: 60px;
+            color: #fff;
+
+            position: sticky;
+            top: 0;
+
+            box-sizing: border-box;
+
+            background: rgb(135, 189, 216, 0.4);
+            border-top: 1px solid rgba(255,255,255,.2);
+            border-bottom: 1px solid rgba(255,255,255,.2);
+
+            z-index: 9999;
+        }
+
+        header h1{
+            margin-left: 40px;
+            margin-top: 20px;
+            font-size: 1.5ex;
+            display: inline-block;
+        }
+
+        header nav ul{
+            display: flex;
+            float: right;
+            /*flex랑 float:right 둘이 함께 있어야 내가 원하는 오른쪽 정렬이 됨!*/
+            font-size: 1.2em;
+            text-transform: uppercase;
+
+            margin-right: 40px;
+        }
+
+        header ul li{
+            /*float: right;*/
+            padding: 20px;
+        }
+
+        header ul li a{
+            color: #fff;
+        }
+
+        .clear{
+            clear: both;
+        }
+
+        section{
+            width: 100%;
+            height: 100vh;
+            background-color: green;
+        }
+
+        .sec1{
+            background: url(photos/IMG_4719.jpg) no-repeat center center fixed; /*background-position: center;가 내가 찾던 효과!*/
+            background-size: cover;
+            background-attachment: fixed;
+            width: 100%;
+            height: 100vh;
+
+
+        }
+
+        .sec2{
+            background: rgba(247, 247, 247, 1.0);
+        }
+
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Black Han Sans', sans-serif;
+            font-weight: 100;
+        }
+
+        .sec1 h2{
+            font-size: 2.5em;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        .blur{
+            background: url(photos/IMG_4719.jpg) no-repeat center center fixed; /*background-position: center;가 내가 찾던 효과!*/
+            background-size: cover;
+            background-attachment: fixed;
+            overflow: hidden;
+            filter: blur(1.5px);
+            -webkit-filter:blur(1.5px);
+            -o-filter:blur(1.5px);
+
+            position: absolute;
+            height: 450px;
+            /*top: -50px;*/
+            bottom: -50px;
+            left: -50px;
+            right: -50px;
+
+            opacity: 0.8;
+        }
+
+        .widget{
+            border-top: 2px solid rgba(255,255,255,.5);
+            border-bottom: 2px solid rgba(255,255,255,.5);
+            height: 450px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .center{
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .text{
+            height: 200px;
+            width: 340px;
+        }
+
+        .text h2{
+            text-align: center;
+            text-shadow: 1px 1px rgba(0,0,0,.1);
+            color: #fff;
+            font-family: 'Lora', serif;
+            font-weight: 700;
+            font-size: 38px;
+        }
+
+        .text p {
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 1px 1px rgba(0, 0, 0, .1);
+            margin-top: 0px;
+            /*font-family: 'Lato', serif;*/
+            font-weight: 400;
+            font-size: 22px;
+        }
+
+        footer{
+            width: 100%;
+            height: 50px;
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <nav>
+                <h1>심리밀당남</h1>
+                <ul>
+                    <li><a href="home">home</a></li>
+                    <li><a href="about">about</a></li>
+                    <li><a href="services">services</a></li>
+                    <li><a href="team">team</a></li>
+                    <li><a href="contact">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="clear"></div>
+
+        <section class="sec1">
+
+            <div class="widget center">
+                <div class="blur"></div>
+
+                <div class="text center">
+                    <h2>I Do What I Love Slowly, But Steadly. That's How I Live.</h2>
+                </div>
+            </div>
+            <!-- <h2>Slow but Steady.<br> That's how I live.</h2> -->
+        </section>
+
+        <section class="sec2">
+
+        </section>
+
+        <section class="sec3"></section>
+        <section class="sec4"></section>
+
+        <footer></footer>
+
+    </div>
+</body>
+</html>

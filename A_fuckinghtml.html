@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        fuck
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="css/stylesheet_pr.css">
+
+    <style type="text/css">
+
+        *{/*
+            overflow-x: hidden;*/
+        }
+        body{
+            background-color:  #000;
+        }
+
+        header{
+            position: sticky;
+            top: 0;
+            box-sizing: border-box;
+            color: #fff;
+        }
+
+        header nav{
+            width: 100%;
+            height: 50px;
+            background: rgba(0,0,0,0.8);
+            border-top: 1px solid rgba(255,255,255,.2);
+            border-bottom: 1px solid rgba(255,255,255,.2);
+        }
+        header nav h1{
+            display: inline-block;
+            font-size: 1.5em;
+            margin: 10px 20px;
+        }
+
+        header nav ul {
+            display: flex;
+            float: right;
+            /*margin: 10px 10px;*/
+            margin: 0;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+
+        header ul li{
+            margin-right: 20px;
+        }
+
+        header ul li a{
+            padding: 0 20px;
+            line-height: 50px;/*line height를 지정하면 margin-topㅇ없이도 깔끔하게 정렬할 수 있음.*/
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .content main section{
+            width: 100%;
+            height: 100vh;
+            box-sizing: border-box; /*border-box 왜하는지 알게됨! 이게 없으면 .sec2에 추가된 padding값 때문에 sec2만 비정상적으로 커짐.*/
+        }
+
+        .content main .sec1{
+            background-image: url(images/fam.jpg);
+            background-size: cover;
+
+        }
+
+        .content main .sec2{
+            padding: 100px;
+            color: #fff;
+        }
+
+        .content main .sec2 h2{
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <header>
+            <nav>
+                <h1>심리밀당남</h1>
+
+                <ul>
+                    <li class=""><a href="">home</a></li>
+                    <li class=""><a href="">about</a></li>
+                    <li class=""><a href="">portfolio</a></li>
+                    <li class=""><a href="">team</a></li>
+                    <li class=""><a href="">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="content">
+            <main>
+                <section class="sec1"></section>
+                <section class="sec2" style="width: 100%">
+                    <h2>Home page layout without Js</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quia beatae a, autem dolorum est fugiat, provident modi? Veritatis quos officia asperiores hic quidem praesentium totam culpa beatae impedit quam repudiandae vel voluptatum, consectetur fuga blanditiis eligendi, dolores. Enim laborum repellat quisquam, excepturi molestias nostrum non minus placeat et distinctio tempore eos recusandae harum ducimus molestiae, dicta explicabo inventore error ea. Ullam vel deserunt alias rem a, iure labore quos ducimus ea odit amet sunt quia doloremque numquam distinctio esse, fuga hic repudiandae sit magnam. Aut earum aperiam, alias ex quasi unde! Iste accusantium amet sint, beatae dolores perspiciatis eligendi.</p>
+                </section>
+                <section class="sec3"></section>
+            </main>
+        </section>
+    </div>
+
+
+
+
+
+</body>
+</html>

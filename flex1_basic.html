@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        PRACTICE
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="css/stylesheet_pr.css">
+    <meta charset="utf-8">
+
+    <style type="text/css">
+
+        .container{
+            background-color: powderblue;
+            display: flex; /*flex 사용의 출발점은 부모 태그에 display: flex;로 설정하는 것!*/
+            flex-direction: column-reverse;/*flex-direction의 기본 값은 row. row-reverse는 반대로 정렬
+            값을 column으로 바꾸면 수직정렬. 뒤집는 것은 column reverse.*/
+        }
+
+        .item{
+            background-color: tomato;
+            color: white;
+            border: 1px solid white;
+        }
+
+        </style>
+
+</head>
+<body>
+        <!-- flex 효과를 주기 위해 반드시 div 태그를 쓸 필요도, 클래스 명을 container와 item으로 줄 필요가 없음. 중요한 것은 부모와 자식 관계! -->
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+
+
+
+
+</body>
+</html>

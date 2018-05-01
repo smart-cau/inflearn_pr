@@ -1,0 +1,23 @@
+/*---------초기화 코드--------*/
+* {
+    margin :0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border : 0;
+}
+/*-----------------*/
+
